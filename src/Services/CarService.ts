@@ -20,7 +20,6 @@ class CarServices {
     const carsODM = new CarODM();
     const carnew = await carsODM.findAll();
     const cars = carnew.map((car) => this.createDomain(car));
-    console.log(cars);
     return cars;
   }
 
